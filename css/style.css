@@ -28,7 +28,7 @@ header h1 {
 
 /* regole contenuto principale */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 30px auto;
     /* DEBUG */
     /* background-color:  blue;
@@ -105,6 +105,28 @@ a {
     display: none;
 }
 
+/* REGOLE ULTIMA SECTION */
+h4 {
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+#border {
+    border: 1px solid orange;
+    width: 20%;
+}
+.presentation p {
+    font-size: 14px;
+    line-height: 30px;
+}
+.presentation img {
+    width: 60%;
+    margin: 15px 90px;
+}
+
+/* regole footer */
+
+
 /* RESPONSIVE */
 
 /* versione tablet */
@@ -142,6 +164,26 @@ a {
     #banner img {
         display: inline;
         width: 100%;
+        margin-bottom: 30px;
+    }
+    .presentation img {
+        width: 30%;
+        float: left;
+        margin-top: 25px;
+        margin-left: 0px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+    }
+    .presentation p {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 350;
+    }
+
+    /* regole footer  */
+    footer {
+        height: 150px;
+        background-color: rgb(124, 105, 164);
     }
 }
 
@@ -153,8 +195,13 @@ a {
     header h1 {
         font-weight: 900;
     }
+    .container {
+        width: 75%;
+        margin: 30px auto;
+        /* DEBUG */
+    }
     .container h2 {
-        font-size: 50px;
+        font-size: 30px;
     }
     .text_plus {
         display: inline;
@@ -162,6 +209,7 @@ a {
     .container_col {
         margin: 0 auto;
         display: flex;
+        gap: 0px;
     }
     .col_video {
         width: 70%;
@@ -169,15 +217,52 @@ a {
     .col_text {
         width: 30%;
         background-color: white;
-        padding: 30px 25px;
+        padding: 25px 25px;
+        font-size: 10px;
+        line-height: 5px;
         /* height: 470px; */
     }
+    .col_text ul {
+        gap: 20px;
+    }
+    .col_text h3 {
+        margin-bottom: 40px;
+    }
+    
     .text_plus2 {
         display: inline;
+    }
+    /* regole button */
+    .container_buttons a {
+        font-size: 12px;
+    }
+    .button {
+        padding: 8px 33px;
+        border-radius: 33px;
     }
     /* regole banner */
     #banner img {
         display: inline;
         width: 100%;
     }
+    #border {
+        border: 1px solid orange;
+        width: 9%;
+    }
+    .presentation img {
+        width: 37%;
+        float: left;
+        margin-top: 25px;
+        margin-left: 0px;
+        margin-right: 8px;
+        margin-bottom: 3px;
+    }
+    .presentation p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 350;
+    }
+    
+    /* regole footer */
+
 }
